@@ -18,16 +18,14 @@ using namespace std;
 class RecursoC : public Punto{
     
 private:
-    string stipo;
-    int id;
-    string snombre;
+       
+public:
+    string sidpol;
+ 
     
     vector<string> vcar;
     
     
-    
-public:
-    string sidpol;
     RecursoC(float x, float y);
     
     virtual ~RecursoC();

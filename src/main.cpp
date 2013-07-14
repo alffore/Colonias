@@ -36,7 +36,10 @@ int main(int argc, char **argv) {
     
     return 0;
 }
-
+/**
+ * 
+ * @param vP
+ */
 void checaPol(vector<Poligono>& vP) {
 
 
