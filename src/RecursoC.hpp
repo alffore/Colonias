@@ -21,7 +21,9 @@ private:
        
 public:
     string sidpol;
- 
+    bool bubicado;
+    
+    double dist;
     
     vector<string> vcar;
     

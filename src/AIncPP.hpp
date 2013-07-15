@@ -11,26 +11,26 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <cmath>
 
 #include "Poligono.hpp"
 #include "Punto.hpp"
+#include "RecursoC.hpp"
 
 class AIncPP {
     
-private:
-    float dist_min;
-    string sidpol_min;
+
     
 public:
-    AIncPP(vector<RecursoC>& vRC, const vector<Poligono>& vPol);
+    AIncPP(vector<RecursoC>& vRC,  vector<Poligono>& vPol);
    
     virtual ~AIncPP();
 private:
 
-    bool punto_en_pol(const Punto& p, const Poligono&  PPol);
+    bool punto_en_pol(const Punto& p, Poligono&  PPol);
+
     
-    void determinaPolCer(const Punto& p,const vector<Poligono>&  vPol);
-    
+    double distPunPol(const Punto& p, Poligono&  PPol);
 };
 
 #endif	/* AINCPP_HPP */

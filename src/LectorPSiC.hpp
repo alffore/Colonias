@@ -15,12 +15,16 @@
 #include <algorithm>
 
 #include "RecursoC.hpp"
+#include "ITRF2CCL.hpp"
 
 #define DELIMITER       "|"
 
 using namespace std;
 
 class LectorPSiC {
+    
+private:
+    ITRF2CCL i2c;
 public:
     vector<RecursoC> vRec;
 

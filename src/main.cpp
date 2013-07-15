@@ -4,6 +4,7 @@
 #include <algorithm>
 
 #include "LectorINT.hpp"
+#include "LectorPSiC.hpp"
 #include "Poligono.hpp"
 #include "Punto.hpp"
 
@@ -19,7 +20,7 @@ void checaPol(vector<Poligono>& vP);
  */
 int main(int argc, char **argv) {
 
-   // vector<Poligono> vP;
+  
 
     if (argc == 1) {
 
@@ -27,11 +28,11 @@ int main(int argc, char **argv) {
 
     }
 
-    //LectorINT lint(vP);
+   
     LectorINT lint;
     lint.leeArchivo(string(argv[1]));
     checaPol(lint.vPol);
-    //checaPol(vP);
+   
     
     
     return 0;

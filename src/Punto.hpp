@@ -13,7 +13,13 @@
 class Punto : public ObjetoGeom {
 public:
 
+    /**
+     * @brief Longitud - Este
+     */
     float x;
+    /**
+     * @brief Latitud - Norte
+     */
     float y;
 
     Punto(float x, float y) : ObjetoGeom(PUNTO), x(x), y(y) {

@@ -8,7 +8,7 @@
 
 CC= g++ -c
 
-CLINKER= g++ -o
+CLINKER= g++ -lm -o 
 
 CFLAGS= -O3 -Wall
 
@@ -20,7 +20,11 @@ OBJ= main.o \
 	Punto.o \
 	Poligono.o \
 	LectorINT.o \
-	RecursoC.o
+	RecursoC.o \
+	LectorPSiC.o \
+	ITRF2CCL.o \
+	AIncPP.o
+	
 	
 
 DIR_SRC= ./src/

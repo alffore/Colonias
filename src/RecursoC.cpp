@@ -8,6 +8,8 @@
 #include "RecursoC.hpp"
 
 RecursoC::RecursoC(float x,float y) :Punto(x,y){
+    bubicado=false;
+    dist=10E9;
 }
 
 

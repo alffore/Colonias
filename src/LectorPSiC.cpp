@@ -43,11 +43,13 @@ void LectorPSiC::parser(string scad) {
 
         RecursoC auxP(atof(vc[0].c_str()),atof(vc[1].c_str()));
 
-  
+        i2c.cDeg2PCCL(auxP.y,auxP.x);
+        
+        auxP.x=i2c.obtenEste();
+        auxP.y=i2c.obtenNorte();
+        
         auxP.vcar=vc;
         
-        
-
         vRec.push_back(auxP);
     }
 }
