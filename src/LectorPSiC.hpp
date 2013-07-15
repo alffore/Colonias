@@ -21,6 +21,8 @@
 
 using namespace std;
 
+/**
+ */
 class LectorPSiC {
     
 private:
@@ -29,6 +31,7 @@ public:
     vector<RecursoC> vRec;
 
     LectorPSiC(string snomarch);
+    LectorPSiC(){};
     void leeArchivo(string snomarch);
     virtual ~LectorPSiC();
 private:

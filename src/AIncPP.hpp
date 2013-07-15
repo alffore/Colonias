@@ -20,14 +20,12 @@
 class AIncPP {
        
 public:
-    AIncPP(vector<RecursoC>& vRC,  vector<Poligono>& vPol);
-   
+    long npubi;
+    AIncPP(vector<RecursoC>& vRec,  vector<Poligono>& vPol);
     virtual ~AIncPP();
 private:
 
     bool punto_en_pol(const Punto& p, Poligono&  PPol);
-
-    
     double distPunPol(const Punto& p, Poligono&  PPol);
 };
 

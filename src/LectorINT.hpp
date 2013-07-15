@@ -26,10 +26,6 @@ using namespace std;
 class LectorINT {
 private:
 
-
- 
-
-
 public:
    vector<Poligono> vPol;
 

@@ -6,12 +6,19 @@
  */
 
 #include "LectorPSiC.hpp"
-
+/**
+ * 
+ * @param snomarch
+ */
 LectorPSiC::LectorPSiC(string snomarch) {
     
     leeArchivo(snomarch);
 }
 
+/**
+ * 
+ * @param snomarch
+ */
 void LectorPSiC::leeArchivo(string snomarch) {
     string line;
     ifstream myfile(snomarch.c_str());
@@ -26,6 +33,9 @@ void LectorPSiC::leeArchivo(string snomarch) {
     cout << "#puntos: " << vRec.size() << endl;
 }
 
+/**
+ * 
+ */
 LectorPSiC::~LectorPSiC() {
 }
 
