@@ -18,9 +18,7 @@
 #include "RecursoC.hpp"
 
 class AIncPP {
-    
-
-    
+       
 public:
     AIncPP(vector<RecursoC>& vRC,  vector<Poligono>& vPol);
    

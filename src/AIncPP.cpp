@@ -7,6 +7,11 @@
 
 #include "AIncPP.hpp"
 
+/**
+ * 
+ * @param vRec
+ * @param vPol
+ */
 AIncPP::AIncPP(vector<RecursoC>& vRec, vector<Poligono>& vPol) {
 
     for (vector<RecursoC>::iterator itrec = vRec.begin(); itrec != vRec.end(); itrec++) {
