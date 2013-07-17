@@ -48,13 +48,19 @@ bool AIncPP::punto_en_pol(const Punto& p, Poligono& PPol) {
 
     long vtam = PPol.vp.size();
 
+    complex<double> ztot(0,0);
 
-    for (long j = 0; j < vtam; j++) {
+    for (long j = 0; j < vtam-1; j++) {
 
-
+        ztot+=calculaIL(p,PPol.vp[j],PPol.vp[j+1]);
 
     }
 
+    ztot+=calculaIL(p,PPol.vp[vtam-1],PPol.vp[0]);
+    
+    if(fabs(imag(ztot))>0)return true;
+    
+    
     return false;
 }
 
