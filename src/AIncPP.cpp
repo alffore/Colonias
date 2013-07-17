@@ -14,8 +14,8 @@
  */
 AIncPP::AIncPP(vector<RecursoC>& vRec, vector<Poligono>& vPol) {
 
-    npubi=0;
-    
+    npubi = 0;
+
     for (vector<RecursoC>::iterator itrec = vRec.begin(); itrec != vRec.end(); itrec++) {
         for (vector<Poligono>::iterator itpol = vPol.begin(); itpol != vPol.end(); itpol++) {
 
@@ -46,15 +46,40 @@ AIncPP::AIncPP(vector<RecursoC>& vRec, vector<Poligono>& vPol) {
  */
 bool AIncPP::punto_en_pol(const Punto& p, Poligono& PPol) {
 
-    long vtam= PPol.vp.size();
-    
-    
-    for(long j=0;j<vtam;j+=2){
-        
-        
+    long vtam = PPol.vp.size();
+
+
+    for (long j = 0; j < vtam; j++) {
+
+
+
     }
 
     return false;
+}
+
+/**
+ * 
+ * @param p0
+ * @param p1
+ * @param p2
+ * @return 
+ */
+complex<double> AIncPP::calculaIL(const Punto& p0, const Punto& p1, const Punto& p2) {
+
+    double t, delta, tmax;
+
+    tmax = 100;
+    delta = 1 / tmax;
+
+    complex <double> z0(p0.x, p0.y), z1(p1.x, p1.y), z2(p2.x, p2.y), zaux(0, 0);
+
+    for (t = 0; t < 1; t += delta) {
+
+        zaux += (z2 - z1) * delta / ((z2 - z1) * t + z1 - z0);
+    }
+
+    return zaux;
 }
 
 /**

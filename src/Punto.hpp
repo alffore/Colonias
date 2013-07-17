@@ -16,13 +16,13 @@ public:
     /**
      * @brief Longitud - Este
      */
-    float x;
+    double x;
     /**
      * @brief Latitud - Norte
      */
-    float y;
+    double y;
 
-    Punto(float x, float y) : ObjetoGeom(PUNTO), x(x), y(y) {
+    Punto(double x, double y) : ObjetoGeom(PUNTO), x(x), y(y) {
     };
   
     virtual ~Punto();

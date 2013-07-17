@@ -28,7 +28,7 @@ public:
     vector<string> vcar;
     
     
-    RecursoC(float x, float y);
+    RecursoC(double x, double y);
     
     virtual ~RecursoC();
 private:
