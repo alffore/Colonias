@@ -48,24 +48,24 @@ bool AIncPP::punto_en_pol(const Punto& p, Poligono& PPol) {
 
     long vtam = PPol.vp.size();
 
-    complex<double> ztot(0,0);
+    complex<double> ztot(0, 0);
 
-    for (long j = 0; j < vtam-1; j++) {
+    for (long j = 0; j < vtam - 1; j++) {
 
-        ztot+=calculaIL(p,PPol.vp[j],PPol.vp[j+1]);
+        ztot += calculaIL(p, PPol.vp[j], PPol.vp[j + 1]);
 
     }
 
-    ztot+=calculaIL(p,PPol.vp[vtam-1],PPol.vp[0]);
-    
-    if(fabs(imag(ztot))>0)return true;
-    
-    
+    ztot += calculaIL(p, PPol.vp[vtam - 1], PPol.vp[0]);
+
+    if (fabs(imag(ztot)) > 0)return true;
+
+
     return false;
 }
 
 /**
- * 
+ * @brief Metodo que estima una integral de linea en una trayectoria recta que une dos puntos
  * @param p0
  * @param p1
  * @param p2
