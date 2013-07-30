@@ -32,7 +32,7 @@ void LectorINT::leeArchivo(string snomarch) {
             parser(line);
         }
         myfile.close();
-    } else cout << "Problemas para abrir el archivo " << snomarch << endl;
+    } else {cout << "(LectorINT::leeArchivo) Problemas para abrir el archivo " << snomarch << endl;}
 
     cout<<"#poligonos: "<<vPol.size()<<endl;
 }

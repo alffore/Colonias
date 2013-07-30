@@ -8,7 +8,7 @@
 #include "AIncPP.hpp"
 
 /**
- * 
+ * Constructor
  * @param vRec
  * @param vPol
  */
@@ -21,7 +21,6 @@ AIncPP::AIncPP(vector<RecursoC>& vRec, vector<Poligono>& vPol) {
 
             if (itpol->estaPuntoBox(*itrec)) {
                 if (punto_en_pol(*itrec, *itpol)) {
-
                     itrec->sidpol = itpol->sid;
                     itrec->bubicado = true;
                     npubi++;

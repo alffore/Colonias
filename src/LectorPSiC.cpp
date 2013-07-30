@@ -28,7 +28,7 @@ void LectorPSiC::leeArchivo(string snomarch) {
             parser(line);
         }
         myfile.close();
-    } else cout << "Problemas para abrir el archivo " << snomarch << endl;
+    } else cout << "(LectorPSiC::leeArchivo) Problemas para abrir el archivo " << snomarch << endl;
 
     cout << "#puntos: " << vRec.size() << endl;
 }
@@ -49,7 +49,7 @@ void LectorPSiC::parser(string scad) {
     split(vc, scad, DELIMITER);
 
     if (vc.size() > 1) {
-        cout << "Campos: "<<vc.size() << endl;
+        //cout << "Campos: "<<vc.size() << endl;
 
         RecursoC auxP(atof(vc[0].c_str()),atof(vc[1].c_str()));
 
