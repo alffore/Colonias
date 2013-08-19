@@ -24,9 +24,9 @@ long escribeArchivo(string snomarch, LectorPSiC& lpsic);
  */
 int main(int argc, char **argv) {
 
-    if (argc == 1) {
+    if (argc < 4) {
 
-        cout << "Falta lista con archivos a procesar " << endl;
+        cout << "Falta lista con archivos a procesar: puntos  polígonos  archivo_salida" << endl;
         return 1;
     }
 
@@ -103,7 +103,6 @@ long escribeArchivo(string snomarch, LectorPSiC& lpsic) {
 
     if (miar.is_open()) {
 
-
         for (vector<RecursoC>::iterator itpun = lpsic.vRec.begin(); itpun != lpsic.vRec.end(); ++itpun) {
 
             vector<string> vsxp = (*itpun).vcar;
@@ -115,13 +114,11 @@ long escribeArchivo(string snomarch, LectorPSiC& lpsic) {
 
             miar << (*itpun).sidpol << "|" << (*itpun).bubicado << "|" << (*itpun).dist << endl;
 
-
             cuenta++;
         }
 
         miar.close();
     }
-
 
     return cuenta;
 }

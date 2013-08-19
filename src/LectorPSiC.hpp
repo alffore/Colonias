@@ -22,6 +22,7 @@
 using namespace std;
 
 /**
+ * @brief Clase que lee puntos de SiC 
  */
 class LectorPSiC {
     
