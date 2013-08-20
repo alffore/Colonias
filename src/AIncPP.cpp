@@ -64,7 +64,7 @@ bool AIncPP::punto_en_pol(const Punto& p, Poligono& PPol) {
 }
 
 /**
- * @brief Metodo que estima una integral de linea en una trayectoria recta que une dos puntos
+ * @brief Método que estima una integral de linea en una trayectoria recta que une dos puntos
  * @param p0
  * @param p1
  * @param p2

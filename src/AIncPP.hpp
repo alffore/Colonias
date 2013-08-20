@@ -18,6 +18,8 @@
 #include "Punto.hpp"
 #include "RecursoC.hpp"
 
+using namespace std;
+
 class AIncPP {
        
 public:
