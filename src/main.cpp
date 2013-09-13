@@ -15,6 +15,7 @@ using namespace std;
 void checaPol(vector<Poligono>& vP);
 bool leeArchivo(string snomarch, LectorINT &lint);
 long escribeArchivo(string snomarch, LectorPSiC& lpsic);
+long escribeArchivoSQL(string snomarch,vector<RecursoC>& vRec);
 
 /**
  * 
@@ -121,4 +122,17 @@ long escribeArchivo(string snomarch, LectorPSiC& lpsic) {
     }
 
     return cuenta;
+}
+
+/**
+ * Función que escribe un vector de recursos de manera que sea la actualización de SQL para el objeto manzana o colonia
+ * @param snomarch
+ * @param vRec
+ * @return 
+ */
+long escribeArchivoSQL(string snomarch,vector<RecursoC>& vRec){
+     long cuenta = 0;
+     
+     
+     return cuenta;     
 }
